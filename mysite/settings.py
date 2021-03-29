@@ -28,8 +28,8 @@ DEBUG = os.environ.get('DEBUG') == True
 
 
 
-ALLOWED_HOSTS = ['*']
-#ALLOWED_HOSTS = ['https://portfolio-venicios.herokuapp.com']
+#ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://portfolio-venicios.herokuapp.com']
 
 
 
