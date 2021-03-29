@@ -23,9 +23,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '@2s(*n8+6=y8b6x=awv)thi4lwxft(d2d8-atagw_ew=nvt#j3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
+DEBUG = os.environ.get('DEBUG') == True
 
-ALLOWED_HOSTS = ['*']
+
+
+#ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://portfolio-venicios.herokuapp.com']
+
 
 
 # Application definition
@@ -119,6 +124,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfile')
 
 # Configure Django App for Heroku.
 import django_heroku
