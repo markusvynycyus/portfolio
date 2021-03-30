@@ -1,0 +1,78 @@
+{% extends 'portfolio/base.html' %}
+<!--Extended base html file-->
+
+{% block content %}
+    	<!--PORTFOLIO-->
+	<section class="portfolio margin" id="portfolio">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-white mb-0">Portfólio</h2>
+            <hr class="star-light mb-5 text-white">
+			<div class="row">
+			  <div class="col-sm-6">
+				<div class="card">
+				  <div class="card-body">
+					<h5 class="card-title">Portfólio</h5>
+					<p class="card-text">Projeto desenvolvido usando a Linguaguem de Programação Python juntamente
+						com o Framework Django, que como objetivo  listar os trabalhos profissionais de um Desenvolvedor Web.</>
+					<a href="#" class="btn btn-primary">Link do Projeto no GitHub</a>
+					<a href="#" class="btn btn-primary">Link do Projeto no Heroku</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-sm-6">
+				<div class="card">
+				  <div class="card-body">
+					<h5 class="card-title">Project 2</h5>
+					<p class="card-text">Description for the Project</p>
+					<a href="#" class="btn btn-primary">Github or Project Link</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="margin"></div>
+			<div class="row">
+			  <div class="col-sm-6">
+				<div class="card">
+				  <div class="card-body">
+					<h5 class="card-title">Project 3</h5>
+					<p class="card-text">Description for the Project</p>
+					<a href="#" class="btn btn-primary">Github or Project Link</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-sm-6">
+				<div class="card">
+				  <div class="card-body">
+					<h5 class="card-title">Project 4</h5>
+					<p class="card-text">Description for the Project</p>
+					<a href="#" class="btn btn-primary">Github or Project Link</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+	</section>
+
+	<!--ABOUT-->
+	<section class="text-white mb-0 margin" id="about">
+	  <div class="container">
+		<h2 class="text-center text-uppercase text-white">About</h2>
+		<hr class="star-light mb-5">
+		<div class="row">
+		  <div class="col-lg-4 ml-auto about-1">
+			<p class="lead">I'm a Web Developer working on Python 3.x, Using Django 2.1 for Web Development. Previously worked as Php Developer for 1.5 years </p>
+		  </div>
+		  <div class="col-lg-4 mr-auto about-2">
+			<p class="lead">Also having knowledge of HTML, CSS, Javascript, Ajax, Bootstrap, GIT.  </p>
+		  </div>
+		</div>
+		<div class="text-center mt-4">
+		  <a class="btn btn-xl btn-cv" href="/static/portfolio/files/sample.pdf" download>
+			<i class="fas fa-download mr-2"></i>
+			Download CV
+		  </a>
+		</div>
+	  </div>
+	</section>
+
+{% endblock %}
