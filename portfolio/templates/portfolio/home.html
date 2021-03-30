@@ -1,14 +1,36 @@
 {% extends 'portfolio/base.html' %}
 
 {% block content %}
-<!--Header-->
-	<header class="masthead text-white text-center">
-	  <div class="container">
-		<img class="img-fluid mb-5 d-block mx-auto" src="static/portfolio/img/profile.png" alt="">
-		<h1 class="text-uppercase mb-0"> Marcos Venicios E.Chaves</h1>
-		<hr class="star-light">
-		<h2 class="font-weight-light mb-0">Web Developer - Python - Django</h2>
-	  </div>
-	</header>
 
+<div class="row">
+  <div class="col-sm-5">
+    <div class="card" style="width: 22rem;">
+  <img src="static/portfolio/img/foto_pessoal.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Marcos Venicios E. Chaves</h5>
+	 <h6 class="card-title">Bach.em Ciências da Computação</h6>
+	  <h6 class="card-title">UESPI - PI</h6>
+	  	  <h6 class="card-title"> DESENVOLVEDOR PYTHON / DJANGO</h6>
+
+	   <a class="btn btn-warning" href="/static/portfolio/files/curriculum.pdf" download>
+			<i class="fas fa-download mr-2"></i>
+			Download Curriculum
+	  </a>
+  </div>
+</div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"> Sobre o Autor</h5>
+        <p class="card-text">.....................</p>
+		<h5 class="card-title"> Experiências Profissionais</h5>
+        <p class="card-text">....................</p>
+		<h5 class="card-title"> Outros Conhecimentos</h5>
+        <p class="card-text">....................</p>
+
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
