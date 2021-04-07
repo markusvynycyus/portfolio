@@ -5,7 +5,7 @@
 {% block content %}
 <div class="container">
     <div class="row">
-        <div class="col-sm-6 mx-auto">
+        <div class="col-sm-8 mx-auto">
             <!--Contact Form-->
             <form class="margin" action="{% url 'contact' %}" method="POST">
                 {% csrf_token %}
@@ -36,8 +36,12 @@
                 <div class="pull-right">
                     <button type="submit" class="btn btn-primary float-right btn-md">Enviar</button>
                 </div>
+
             </form>
+
         </div>
     </div>
 </div>
+
 {% endblock %}
+
